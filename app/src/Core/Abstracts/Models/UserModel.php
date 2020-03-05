@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Core\Abstracts\Models;
+namespace LargeLaravel\Core\Abstracts\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;

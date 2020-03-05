@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    dd(\LargeLaravel\Containers\User\Models\User::first());
     return view('welcome');
 });

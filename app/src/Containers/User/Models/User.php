@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Containers\User\Models;
+namespace LargeLaravel\Containers\User\Models;
 
 
-use App\Core\Abstracts\Models\UserModel;
+use LargeLaravel\Core\Abstracts\Models\UserModel;
 
 class User extends UserModel
 {
