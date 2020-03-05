@@ -8,6 +8,7 @@ Ideas behind this project include:
  - an IDE should provide good autocomplete with minimal setup
  - use as few magic methods as possible, even better to remove them at all
  - if possible, make code independent on a framework
+ - not to use Eloquent relationships, as they make code hard to refactor and maintain
  
  ### TODO:
 
