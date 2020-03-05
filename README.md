@@ -1,6 +1,6 @@
 ## Large Laravel  - how to build large and maintainable project with Laravel framework
 
-This repo contains an example project like [goodreads](goodreads.com) site where you can rate different books and write reviews about them.
+This repo contains an example project like [goodreads](https://goodreads.com) site where you can rate different books and write reviews about them.
 Ideas behind this project include:
 
  - codebase must be easy to maintain and scale
