@@ -8,3 +8,10 @@ Ideas behind this project include:
  - an IDE should provide good autocomplete with minimal setup
  - use as little magic as possible, even better to remove them at all
  - if possible, make code independent on a framework
+ 
+ ### TODO:
+
+ - add to readme ideas and patterns used in the project
+ - deploy to Heroku
+ - buy a domain for the project
+ - add CI/CD
