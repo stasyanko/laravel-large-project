@@ -11,6 +11,7 @@ Ideas behind this project include:
  
  ### TODO:
 
+ - move console, http kernels and RouteProvider to Core folder
  - add to readme ideas and patterns used in the project
  - deploy to Heroku
  - buy a domain for the project
