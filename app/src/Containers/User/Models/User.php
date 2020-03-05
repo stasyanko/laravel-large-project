@@ -3,11 +3,13 @@
 
 namespace LargeLaravel\Containers\User\Models;
 
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
-use LargeLaravel\Core\Abstracts\Models\UserModel;
-
-class User extends UserModel
+class User extends Authenticatable
 {
+    use Notifiable;
+
     /**
      * The attributes that are mass assignable.
      *
