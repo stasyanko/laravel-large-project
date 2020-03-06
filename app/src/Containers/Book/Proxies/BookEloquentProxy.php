@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LargeLaravel\Containers\Book\QueryBuilders;
+namespace LargeLaravel\Containers\Book\Proxies;
 
 use LargeLaravel\Containers\Book\Models\Book;
 use LargeLaravel\Core\Abstracts\Proxies\BaseEloquentProxy;
