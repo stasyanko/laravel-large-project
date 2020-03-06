@@ -11,6 +11,7 @@ Ideas behind this project include:
  - not to use Eloquent relationships, as they make code hard to refactor and maintain
  
  In this project DTOs are used for transfering data between objects and thanks to PHP 7.4 typed properties we can construct DTOs without annotations. Thanks to the author of this [article](https://dev.to/zubairmohsin33/data-transfer-object-dto-in-laravel-with-php7-4-typed-properties-2hi9) and spatie for their [package](https://github.com/spatie/data-transfer-object).
+
  The following design patterns were used to build this project:
  - data transfer object
  - proxy
