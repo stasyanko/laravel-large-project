@@ -7,16 +7,9 @@ use LargeLaravel\Core\Abstracts\Collections\Collection;
 
 class BookCollection extends Collection
 {
-    public static function create(array $data): BookCollection
+    public function __construct(BookDTO ...$books)
     {
-        $collection = [];
-
-        foreach ($data as $item)
-        {
-            $collection[] = new BookDTO($item);
-        }
-
-        return new self($collection);
+        parent::__construct($books);
     }
 
     public function current(): BookDTO
