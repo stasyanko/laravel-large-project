@@ -1,6 +1,6 @@
 <?php
 
-namespace LargeLaravel\Core\Abstracts\Builders;
+namespace LargeLaravel\Core\Abstracts\Proxies;
 
 use LargeLaravel\Core\Database\Filter;
 use LargeLaravel\Core\Database\WhereExpression;
@@ -8,7 +8,7 @@ use LargeLaravel\Core\Exceptions\EntityNotExistException;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 
 
-abstract class EloquentQueryBuilder
+abstract class BaseEloquentProxy
 {
     /** @var \Illuminate\Database\Eloquent\Model */
     protected const MODEL = null;

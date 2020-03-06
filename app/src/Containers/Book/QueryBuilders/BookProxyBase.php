@@ -4,9 +4,9 @@
 namespace LargeLaravel\Containers\Book\QueryBuilders;
 
 use LargeLaravel\Containers\Book\Models\Book;
-use LargeLaravel\Core\Abstracts\Builders\EloquentQueryBuilder;
+use LargeLaravel\Core\Abstracts\Proxies\BaseEloquentProxy;
 
-class BookQueryBuilder extends EloquentQueryBuilder
+class BookEloquentProxy extends BaseEloquentProxy
 {
     protected const MODEL = Book::class;
 }
