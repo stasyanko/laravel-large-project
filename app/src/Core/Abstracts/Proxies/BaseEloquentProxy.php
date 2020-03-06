@@ -21,7 +21,7 @@ abstract class BaseEloquentProxy
     public function create(array $newModelData): array
     {
         $currentModel = static::MODEL;
-        $createdModel = $currentModel::create($fields);
+        $createdModel = $currentModel::create($newModelData);
 
         return $createdModel->toArray();
     }
