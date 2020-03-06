@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace LargeLaravel\Core\Middleware\Http;
 
 use Fideloper\Proxy\TrustProxies as Middleware;
 use Illuminate\Http\Request;

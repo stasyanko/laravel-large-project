@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace LargeLaravel\Core\Middleware\Http;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 
