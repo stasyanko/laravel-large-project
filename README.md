@@ -10,6 +10,8 @@ Ideas behind this project include:
  - if possible, make code independent on a framework
  - not to use Eloquent relationships, as they make code hard to refactor and maintain
  
+ In this project DTOs are used for transfering data between objects and thanks to PHP 7.4 typed properties we can construct DTOs without third-party packages. Thanks to the author of this [article](https://dev.to/zubairmohsin33/data-transfer-object-dto-in-laravel-with-php7-4-typed-properties-2hi9) for this idea.
+ 
  ### TODO:
 
  - move console, http kernels and RouteProvider to Core folder
