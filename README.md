@@ -21,7 +21,7 @@ Ideas behind this project include:
  ### TODO:
 
  - ~~move console, http kernels to Core folder~~
- - move RouteProvider to Core folder
+ - ~~move RouteServiceProvider to Core folder~~
  - write installation guide
  - write wiki documentation with all design patterns and principles used 
  - add to readme ideas and patterns used in the project

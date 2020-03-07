@@ -4,6 +4,7 @@ namespace LargeLaravel\Containers\Book\UI\API\Routes;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use LargeLaravel\Containers\Book\UI\API\Controllers\BookController;
 
 class RouteProvider extends ServiceProvider
 {
