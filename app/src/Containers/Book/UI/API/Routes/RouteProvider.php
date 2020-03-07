@@ -10,17 +10,13 @@ class RouteProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        Route::group([
-            'middleware' => ['web'],
-        ], function () {
-                $this->bookRoute();
-            });
+        $this->bookRoute();
     }
 
     private function bookRoute(): void
     {
         Route::group([
-            'prefix' => '/book/',
+            'prefix' => 'api/book/',
         ], function () {
             Route::get(
                 '',
