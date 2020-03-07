@@ -22,6 +22,7 @@ Ideas behind this project include:
 
  - ~~move console, http kernels to Core folder~~
  - ~~move RouteServiceProvider to Core folder~~
+ - replace Eloquent with DB query builder which returns Collection of Objects in order not to convert to array Eloquent collections many times
  - write installation guide
  - write wiki documentation with all design patterns and principles used 
  - add to readme ideas and patterns used in the project

@@ -31,6 +31,7 @@ abstract class BaseEloquentProxy
      *
      * @return array
      */
+    //TODO: add fieldList param
     public function findOne(array $whereConditionsList): ?array
     {
         $query = $this->buildQuery($whereConditionsList);
@@ -45,6 +46,7 @@ abstract class BaseEloquentProxy
      *
      * @return null|array
      */
+    //TODO: add fieldList param
     public function findOneById(int $id): ?array
     {
         return $this->findOne([
@@ -59,6 +61,7 @@ abstract class BaseEloquentProxy
      *
      * @return array
      */
+    //TODO: add fieldList param
     public function findAll(
         array $whereList = [],
         ?int $limit = null,
