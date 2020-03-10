@@ -4,6 +4,7 @@
 
 - [Introduction](#Introduction)
 	- [Goals of the project](#Goals)
+- [Installation guide](#Installation-Guide)
 - [Design patterns used for the project](#Design-Patterns-Used)
 - [TODO](#Todo)
 
@@ -28,6 +29,31 @@ Goals of this project include:
  - if possible, make code independent on a framework
  - not to use Eloquent relationships, as they make code hard to refactor and maintain
  
+ <a id="Installation-Guide"></a>
+# Installation guide
+For running the project you must have PHP 7.4.2.
+To run the project, create an empty database.
+Then just do the following:
+
+    git clone https://github.com/stasyanko/laravel-large-project.git
+    cd laravel-large-project
+	cp .env.example .env
+	
+
+In .env file type your database credentials in these lines:
+
+    DB_CONNECTION=mysql  
+    DB_HOST=127.0.0.1  
+    DB_PORT=3306  
+    DB_DATABASE=laravel  
+    DB_USERNAME=root  
+    DB_PASSWORD=
+After that, run these commands from terminal:
+		
+    composer install
+    php artisan key:generate
+    php artisan migrate
+	    
 <a id="Design-Patterns-Used"></a>
 # Design patterns used for the project
  
@@ -38,6 +64,7 @@ Goals of this project include:
  - proxy
  - porto
  - decorator
+ - iterator
  
  <a id="Todo"></a>
 # TODO
