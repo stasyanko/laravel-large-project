@@ -119,10 +119,10 @@ In this part main components, ideas and design principles are explained in detai
 
  - ~~move console, http kernels to Core folder~~
  - ~~move RouteServiceProvider to Core folder~~
- - make abstract class Filter that has method makeWhere() which returns collection of Where interfaces and every filter will extend this class and will implement its own interface
- - write installation guide
- - write wiki documentation with all design patterns and principles used 
- - add to readme ideas and patterns used in the project
+ - make interface Filter which is implemented by every Where class
+ - ~~write installation guide~~
+ - write tests
+ - write documentation in readme with all design patterns and principles used 
  - deploy to Heroku
  - buy a domain for the project
  - add CI/CD
