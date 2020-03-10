@@ -24,9 +24,9 @@
 
 If you programmed with Laravel and PHP you are really pleased how clean Laravel's code is and how simple it is to create apps with Laravel framework. But later you understand that Laravel does not suit well for large scale projects for a few reasons: Laravel uses lots of magic methods and facades which makes it very hard to refactor your code as IDEs understand Laravel's code pretty poorly.
 
-But Laravel has pretty good infrastructure (routing, caching, logging etc.) and it has really good community and lots of ready-made packages. And that's why I decided to adopt Laravel for large and maintainable apps by starting this project.
+But Laravel has pretty good infrastructure (routing, caching, logging etc.) and it has really good community and lots of ready-made packages. And that's why it was decided to adopt Laravel for large and maintainable apps by starting this project.
 
-Also, I would like to share with the community how design patterns may be used in Laravel projects.
+Also, it would be great to share with the community how design patterns may be used in Laravel projects.
 
 <a id="Goals"></a>
 ## Goals of the project
