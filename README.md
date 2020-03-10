@@ -81,10 +81,6 @@ In this part main components, ideas and design principles are explained in detai
  - porto
  - decorator
  - iterator
- 
-<a id="Design"></a>
-## Design
-//TODO
 
 <a id="Actions"></a>
 ## Actions
