@@ -175,6 +175,10 @@ return [
         LargeLaravel\Core\Providers\EventServiceProvider::class,
         LargeLaravel\Core\Providers\RouteServiceProvider::class,
 
+        /*
+         * Custom Service Providers...
+         */
+        LargeLaravel\Containers\Book\Providers\BookServiceProvider::class
     ],
 
     /*

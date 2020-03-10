@@ -16,7 +16,7 @@ class BookServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(GetBookListAction::class, new GetBookListAction(new BookEloquentProxy()));
+        $this->app->bind(GetBookListActionInterface::class, new GetBookListAction(new BookEloquentProxy()));
     }
 
     /**

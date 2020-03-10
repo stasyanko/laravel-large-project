@@ -31,6 +31,8 @@ class GetBookListAction implements GetBookListActionInterface
 
         foreach ($bookList as $book) {
             $book['publish_date'] = Carbon::parse($book['publish_date']);
+            $book['created_at'] = Carbon::parse($book['created_at']);
+            $book['updated_at'] = Carbon::parse($book['updated_at']);
             $bookCollection[] = new BookDTO($book);
         }
 

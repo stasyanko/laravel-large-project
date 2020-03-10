@@ -3,7 +3,6 @@
 namespace LargeLaravel\Containers\Book\UI\API\Controllers;
 
 use LargeLaravel\Containers\Book\Actions\GetBookListAction;
-use LargeLaravel\Containers\Book\Subactions\Interfaces\GetBookListActionInterface;
 use LargeLaravel\Containers\Book\UI\API\Resources\BookListResource;
 use LargeLaravel\Core\Abstracts\Controllers\Controller;
 use LargeLaravel\Core\Http\Requests\API\PaginateRequest;
@@ -17,6 +16,7 @@ class BookController extends Controller
     )
     {
         $bookCollection = $getBookListAction->execute($request);
-        return $bookListResource->fromCollection($bookCollection);
+        
+        return response()->json($bookListResource->fromCollection($bookCollection));
     }
 }

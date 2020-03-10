@@ -19,4 +19,6 @@ class BookDTO extends DataTransferObject
     public int $publisher_id;
     public string $ISBN;
     public string $edition;
+    public Carbon $created_at;
+    public Carbon $updated_at;
 }
