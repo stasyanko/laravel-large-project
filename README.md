@@ -5,7 +5,18 @@
 - [Introduction](#Introduction)
 	- [Goals of the project](#Goals)
 - [Installation guide](#Installation-Guide)
-- [Design patterns used for the project](#Design-Patterns-Used)
+- [Code structure](#Code-Structure)
+- [Main components and ideas](#Main-Components-And-Ideas)
+    - [Design patterns used for the project](#Design-Patterns-Used)
+    - [Actions](#Actions)
+    - [Subactions](#Subactions)
+    - [Interaction with database](#Interaction-With-Database)
+    - [Collections of DTOs and typed collections](#Collections-Of-DTOs)
+    - [Entity relations](#Entity-Relations)
+    - [Decorators](#Decorators)
+    - [Requests](#Requests)
+    - [API resources](#API-Resources)
+    - [View composers](#View-Composers)
 - [TODO](#Todo)
 
 <a id="Introduction"></a>
@@ -54,8 +65,13 @@ After that, run these commands from terminal:
     php artisan key:generate
     php artisan migrate
 	    
+ <a id="Main-Components-And-Ideas"></a>
+# Main Components & Ideas
+
+In this part main components, ideas and design principles are explained in detail.
+
 <a id="Design-Patterns-Used"></a>
-# Design patterns used for the project
+## Design patterns used for the project
  
  In this project DTOs are used for transfering data between objects and thanks to PHP 7.4 typed properties we can construct DTOs without annotations. Thanks to the author of this [article](https://dev.to/zubairmohsin33/data-transfer-object-dto-in-laravel-with-php7-4-typed-properties-2hi9) and spatie for their [package](https://github.com/spatie/data-transfer-object).
 
@@ -66,6 +82,42 @@ After that, run these commands from terminal:
  - decorator
  - iterator
  
+<a id="Design"></a>
+## Design
+//TODO
+
+<a id="Actions"></a>
+## Actions
+//TODO
+
+<a id="Subactions"></a>
+## Subactions
+//TODO
+
+<a id="Interaction-With-Database"></a>
+## Interaction with database
+//TODO
+
+<a id="Collections-Of-DTOs"></a>
+## Collections of DTOs and typed collections
+//TODO
+
+<a id="Entity-Relations"></a>
+## Entity relations
+//TODO
+
+<a id="Decorators"></a>
+## Decorators
+//TODO
+
+<a id="API-Resources"></a>
+## API resources
+//TODO
+
+<a id="View-Composers"></a>
+## View composers
+//TODO
+
  <a id="Todo"></a>
 # TODO
 
