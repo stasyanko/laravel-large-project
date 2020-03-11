@@ -142,6 +142,7 @@ This approach is good for two reasons: we have a typed collection and we can ref
         return $this->wrapResponse($mappedCollection);  
     }
 
+Also, you get really independent on Eloquent, as you don't use generic Eloquent collections, instead you use collections of DTOs and you can easily replace your data source with any other ORM, API etc. wuthout breaking your code.
 
 <a id="Collections-Of-DTOs"></a>
 ## Collections of DTOs and typed collections
