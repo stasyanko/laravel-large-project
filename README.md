@@ -17,6 +17,8 @@
     - [Requests](#Requests)
     - [API resources](#API-Resources)
     - [View composers](#View-Composers)
+- [Laravel artisan commands](#Laravel-Artisan-Commands)
+    - [Seeding](#Seeding)
 - [TODO](#Todo)
 
 <a id="Introduction"></a>
@@ -113,6 +115,20 @@ In this part main components, ideas and design principles are explained in detai
 <a id="View-Composers"></a>
 ## View composers
 //TODO
+
+ <a id="Laravel-Artisan-Commands"></a>
+# Laravel artisan commands
+
+Some classes of Laravel in the project are moved to Core folder and some artisan commands are run with additional options.
+
+<a id="Seeding"></a>
+## Seeding
+
+To seed database run db:seed like this with option --class:
+
+    php artisan db:seed --class '\LargeLaravel\Core\Seeders\DatabaseSeeder'
+
+Your custom seeders must be in the  Data folder of the proper container, e.g. Containers/User/Data/Seeders/UserSeeder.
 
  <a id="Todo"></a>
 # TODO
