@@ -188,5 +188,4 @@ Your custom seeders must be in the  Data folder of the proper container, e.g. Co
  - write tests
  - write documentation in readme with all design patterns and principles used 
  - deploy to Heroku
- - buy a domain for the project
  - add CI/CD
