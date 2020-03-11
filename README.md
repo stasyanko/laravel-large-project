@@ -113,33 +113,33 @@ After we get data from some EloquentProxy, for example BookEloquentProxy, we nee
 
     public function execute(PaginateRequestInterface $paginateRequest): BookCollection  
     {  
-      $bookCollection = [];  
-      $bookList = $this->bookEloquentProxy->findAll(  
-        [],  
-        $paginateRequest->getLimit(),  
-        $paginateRequest->getOffset()  
-     );  
-      foreach ($bookList as $book) {  
-	      $bookCollection[] = new BookDTO($book);  
-     }  
-      return new BookCollection(...$bookCollection);  
+        $bookCollection = [];  
+        $bookList = $this->bookEloquentProxy->findAll(  
+            [],  
+            $paginateRequest->getLimit(),  
+            $paginateRequest->getOffset()  
+        );  
+        foreach ($bookList as $book) {  
+            $bookCollection[] = new BookDTO($book);  
+        }  
+        return new BookCollection(...$bookCollection);  
     }
 
 This approach is good for two reasons: we have a typed collection and we can refactor easily both every entity of a collection, and a collection itself. Also, we can typehint BookCollection when passing it as a param:
 
     public function fromCollection(BookCollection $bookCollection): array  
     {  
-      $mappedCollection = [];  
-      
-      foreach ($bookCollection as $bookDTO) {  
-	      $mappedCollection[] = [  
-              // any IDE will provide autocomplete here 
-              // without any additional packages like IDE helper for Laravel
-		      'id' => $bookDTO->id,  
-		      'title' => $bookDTO->title,  
-	     ]; 
-      }  
-      return $this->wrapResponse($mappedCollection);  
+        $mappedCollection = [];  
+
+        foreach ($bookCollection as $bookDTO) {  
+            $mappedCollection[] = [  
+                // any IDE will provide autocomplete here 
+                // without any additional packages like IDE helper for Laravel
+                'id' => $bookDTO->id,  
+                'title' => $bookDTO->title,  
+            ]; 
+        }  
+        return $this->wrapResponse($mappedCollection);  
     }
 
 
