@@ -4,7 +4,7 @@ namespace LargeLaravel\Containers\Book\UI\API\Resources;
 
 use LargeLaravel\Containers\Book\Collections\BookCollection;
 use LargeLaravel\Containers\Book\UI\API\Resources\Interfaces\BookListResourceInterface;
-use LargeLaravel\Core\Abstracts\Resources\ApiResource;
+use LargeLaravel\Ship\Abstracts\Resources\ApiResource;
 
 
 class BookListResource extends ApiResource implements BookListResourceInterface

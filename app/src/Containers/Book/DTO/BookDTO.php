@@ -3,7 +3,7 @@
 namespace LargeLaravel\Containers\Book\DTO;
 
 use Carbon\Carbon;
-use LargeLaravel\Core\Abstracts\DTO\DataTransferObject;
+use LargeLaravel\Ship\Abstracts\DTO\DataTransferObject;
 
 class BookDTO extends DataTransferObject
 {

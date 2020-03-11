@@ -3,7 +3,7 @@
 namespace LargeLaravel\Containers\Book\Collections;
 
 use LargeLaravel\Containers\Book\DTO\BookDTO;
-use LargeLaravel\Core\Abstracts\Collections\Collection;
+use LargeLaravel\Ship\Abstracts\Collections\Collection;
 
 class BookCollection extends Collection
 {

@@ -4,7 +4,7 @@
 namespace LargeLaravel\Containers\Book\Proxies;
 
 use LargeLaravel\Containers\Book\Models\Book;
-use LargeLaravel\Core\Abstracts\Proxies\BaseEloquentProxy;
+use LargeLaravel\Ship\Abstracts\Proxies\BaseEloquentProxy;
 
 class BookEloquentProxy extends BaseEloquentProxy
 {

@@ -126,7 +126,7 @@ Some classes of Laravel in the project are moved to Core folder and some artisan
 
 To seed database run db:seed like this with option --class:
 
-    php artisan db:seed --class '\LargeLaravel\Core\Seeders\DatabaseSeeder'
+    php artisan db:seed --class '\LargeLaravel\Ship\Seeders\DatabaseSeeder'
 
 Your custom seeders must be in the  Data folder of the proper container, e.g. Containers/User/Data/Seeders/UserSeeder.
 
