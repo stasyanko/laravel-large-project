@@ -119,7 +119,7 @@ In this part main components, ideas and design principles are explained in detai
  <a id="Laravel-Artisan-Commands"></a>
 # Laravel artisan commands
 
-Some classes of Laravel in the project are moved to Core folder and some artisan commands are run with additional options.
+Some classes of Laravel in the project are moved to Ship folder and some artisan commands are run with additional options.
 
 <a id="Seeding"></a>
 ## Seeding
@@ -133,8 +133,8 @@ Your custom seeders must be in the  Data folder of the proper container, e.g. Co
  <a id="Todo"></a>
 # TODO
 
- - ~~move console, http kernels to Core folder~~
- - ~~move RouteServiceProvider to Core folder~~
+ - ~~move console, http kernels to Ship folder~~
+ - ~~move RouteServiceProvider to Ship folder~~
  - make interface Filter which is implemented by every Where class
  - ~~write installation guide~~
  - write tests
