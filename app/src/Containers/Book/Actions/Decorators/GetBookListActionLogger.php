@@ -11,7 +11,7 @@ class GetBookListActionLogger extends GetBookListActionDecorator
 {
     public function execute(PaginateRequestInterface $paginateRequest): BookCollection
     {
-        $bookCollection = parent::execute($paginateRequest);
+        $bookCollection = $this->getBookListActionInterface->execute($paginateRequest);
         \Log::info("returned " . count($bookCollection) . " books");
 
         return $bookCollection;
