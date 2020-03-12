@@ -151,7 +151,7 @@ Also, you get really independent on Eloquent, as you don't use generic Eloquent 
 <a id="Entity-Relations"></a>
 ## Entity relations
 
-Eloquent relations should not be used in a large project, as they make your code even more unmaintainable. Refactoring gets almost impossible with Eloquent relations, so instead put your related collecttion (has many/many to many relations) or DTO (has one) to your desired DTO:
+Eloquent relations should not be used in a large project, as they make your code even more unmaintainable. Refactoring gets almost impossible with Eloquent relations, so instead put your related collection (has many/many to many relations) or DTO (has one) to your desired DTO:
 
     class BookDTO extends DataTransferObject
     {
