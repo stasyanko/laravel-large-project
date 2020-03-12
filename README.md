@@ -61,6 +61,7 @@ In .env file type your database credentials in these lines:
     DB_DATABASE=laravel  
     DB_USERNAME=root  
     DB_PASSWORD=
+
 After that, run these commands from terminal:
 		
     composer install
@@ -153,7 +154,34 @@ Also, you get really independent on Eloquent, as you don't use generic Eloquent 
 
 <a id="Decorators"></a>
 ## Decorators
-//TODO
+
+Decorators are really great, as they allow you to extend an object's behaviour in a really OOP way. What would you do if you nedded to log the value of your action, e.g. list of books? Well, we often see this recommendation:
+
+    public function execute(PaginateRequestInterface $paginateRequest): BookCollection  
+    {  
+       $bookCollection = [];  
+       // some code here
+
+       Log::info('get ' . count($bookCollection) . 'books');
+
+       return new BookCollection(...$bookCollection);  
+    }
+
+But what did we do right now? We broke here open closed principle. Our code must be open for extension, but closed for modification. By inserting Log::info() to execute() method, we modified it, instead of extending. Also, our object now does more than one thing: it fectches books and logs the result.
+
+How can we do it in a OOP way? Decorators to the rescue!
+In a Laravel service container we decorate our action before binding it to our interface:
+
+    public function register()  
+    {  
+      $bookListAction = new GetBookListAction(new BookEloquentProxy());  
+      $bookListActionLogged = new GetBookListActionLogger($bookListAction);  
+      
+      $this->app->bind(GetBookListActionInterface::class, function ($app) use($bookListActionLogged) {  
+        return $bookListActionLogged;  
+      });
+     }
+As GetBookListActionLogger implements GetBookListActionInterface, it can be easily bound to this in a service container and in this case we extended GetBookListAction instead of modifying it. We can add as many deorators as we like and everything will work fine.
 
 <a id="API-Resources"></a>
 ## API resources
