@@ -185,7 +185,34 @@ As GetBookListActionLogger implements GetBookListActionInterface, it can be easi
 
 <a id="API-Resources"></a>
 ## API resources
-//TODO
+
+API resources are used to transform API responses. Sometimes, you need to convert some field into another type and hide some fields. Every API resource must extend ApiResource and implement its own interface:
+
+    <?php
+
+    namespace LargeLaravel\Containers\Book\UI\API\Resources;
+
+    use LargeLaravel\Containers\Book\Collections\BookCollection;
+    use LargeLaravel\Containers\Book\UI\API\Resources\Interfaces\BookListResourceInterface;
+    use LargeLaravel\Ship\Abstracts\Resources\ApiResource;
+
+
+    class BookListResource extends ApiResource implements BookListResourceInterface
+    {
+      public function fromCollection(BookCollection $bookCollection): array
+      {
+        $mappedCollection = [];
+
+        foreach ($bookCollection as $bookDTO) {
+            $mappedCollection[] = [
+                'id' => $bookDTO->id,
+                'title' => $bookDTO->title,
+            ];
+        }
+
+        return $this->wrapResponse($mappedCollection);
+      }
+    }
 
 <a id="View-Composers"></a>
 ## View composers
