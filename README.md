@@ -160,7 +160,7 @@ Eloquent relations should not be used in a large project, as they make your code
       // .... some other properties
       
       // these are comments related to BookDTO
-      public CoomentCollection $comments
+      public CommentCollection $comments
     }
 
 
@@ -253,6 +253,6 @@ Your custom seeders must be in the  Data folder of the proper container, e.g. Co
  - make interface Filter which is implemented by every Where class
  - ~~write installation guide~~
  - write tests
- - write documentation in readme with all design patterns and principles used 
+ - ~~write documentation in readme with all design patterns and principles used~~
  - deploy to Heroku
  - add CI/CD
