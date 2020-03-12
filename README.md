@@ -14,8 +14,6 @@
     - [Collections of DTOs and typed collections](#Collections-Of-DTOs)
     - [Entity relations](#Entity-Relations)
     - [Decorators](#Decorators)
-    - [Requests](#Requests)
-    - [Requests](#Requests)
     - [API resources](#API-Resources)
     - [View composers](#View-Composers)
 - [Laravel artisan commands](#Laravel-Artisan-Commands)
