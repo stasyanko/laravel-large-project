@@ -92,7 +92,7 @@ Actions are used to incapsulate busines logic and must be used only from control
 <a id="Subactions"></a>
 ## Subactions
 
-Subactions are used to extract busines logic that needs to be reused in other containers.
+Subactions are used to extract busines logic that needs to be reused in other containers. Well, initially it is [recommended](https://github.com/Mahmoudz/Porto#Tasks) to use tasks for that in porto pattern, but in most cases you don't need so much flexibility, also writing actions + tasks makes your proces of writing code much slower.
 
 <a id="Interaction-With-Database"></a>
 ## Interaction with database
