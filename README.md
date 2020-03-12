@@ -150,7 +150,20 @@ Also, you get really independent on Eloquent, as you don't use generic Eloquent 
 
 <a id="Entity-Relations"></a>
 ## Entity relations
-//TODO
+
+Eloquent relations should not be used in a large project, as they make your code even more unmaintainable. Refactoring gets almost impossible with Eloquent relations, so instead put your related collecttion or DTO to your DTO:
+
+    class BookDTO extends DataTransferObject
+    {
+      public int $id;
+      
+      // .... some other properties
+      
+      // these are comments related to BookDTO
+      public CoomentCollection $comments
+    }
+
+
 
 <a id="Decorators"></a>
 ## Decorators
