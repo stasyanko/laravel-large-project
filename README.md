@@ -109,6 +109,9 @@ So, it would be better better to call this abstraction Proxy. According to Wikip
 
 *In short, a proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes.*
 
+<a id="Collections-Of-DTOs"></a>
+## Collections of DTOs and typed collections
+
 After we get data from some EloquentProxy, for example BookEloquentProxy, we need to convert this data to collection of DTOs:
 
     public function execute(PaginateRequestInterface $paginateRequest): BookCollection  
@@ -143,10 +146,6 @@ This approach is good for two reasons: we have a typed collection and we can ref
     }
 
 Also, you get really independent on Eloquent, as you don't use generic Eloquent collections, instead you use collections of DTOs and you can easily replace your data source with any other ORM, API etc. wuthout breaking your code.
-
-<a id="Collections-Of-DTOs"></a>
-## Collections of DTOs and typed collections
-//TODO
 
 <a id="Entity-Relations"></a>
 ## Entity relations
