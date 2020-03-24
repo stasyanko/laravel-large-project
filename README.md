@@ -5,7 +5,6 @@
 - [Introduction](#Introduction)
 	- [Goals of the project](#Goals)
 - [Installation guide](#Installation-Guide)
-- [Code structure](#Code-Structure)
 - [Main components and ideas](#Main-Components-And-Ideas)
     - [Design patterns used for the project](#Design-Patterns-Used)
     - [Actions](#Actions)
