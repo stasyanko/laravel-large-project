@@ -38,11 +38,7 @@
         "psr-4": {
             "App\\": "app",
             "LargeLaravel\\": "app\\src"
-        },
-        "classmap": [
-            "database/seeds",
-            "database/factories"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
