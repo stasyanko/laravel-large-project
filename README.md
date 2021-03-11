@@ -86,12 +86,12 @@ In this part main components, ideas and design principles are explained in detai
 <a id="Actions"></a>
 ## Actions
 
-Actions are used to incapsulate busines logic and must be used only from controllers.
+Actions are used to encapsulate business logic and must be used only from controllers.
 
 <a id="Subactions"></a>
 ## Subactions
 
-Subactions are used to extract busines logic that needs to be reused in other containers. Well, initially it is [recommended](https://github.com/Mahmoudz/Porto#Tasks) to use tasks for that in porto pattern, but in most cases you don't need so much flexibility, also writing actions + tasks makes your proces of writing code much slower.
+Subactions are used to extract business logic that needs to be reused in other containers. Well, initially it is [recommended](https://github.com/Mahmoudz/Porto#Tasks) to use tasks for that in porto pattern, but in most cases you don't need so much flexibility, also writing actions + tasks makes your process of writing code much slower.
 
 <a id="Interaction-With-Database"></a>
 ## Interaction with database
@@ -104,7 +104,7 @@ Often developers call it Repository when wrapping Eloquent with something, but i
 *Mediates between the domain and data mapping layers using a collection-like interface for accessing domain objects.*
 
 But developers often call their abstraction like UserEloquentRepository, but according to the definition above Repository shouldn't know anything about the way the data is stored.
-So, it would be better better to call this abstraction Proxy. According to Wikipaedia Proxy pattern does the following:
+So, it would be better better to call this abstraction Proxy. According to Wikipedia Proxy pattern does the following:
 
 *In short, a proxy is a wrapper or agent object that is being called by the client to access the real serving object behind the scenes.*
 
@@ -144,7 +144,7 @@ This approach is good for two reasons: we have a typed collection and we can ref
         return $this->wrapResponse($mappedCollection);  
     }
 
-Also, you get really independent on Eloquent, as you don't use generic Eloquent collections, instead you use collections of DTOs and you can easily replace your data source with any other ORM, API etc. wuthout breaking your code.
+Also, you get really independent on Eloquent, as you don't use generic Eloquent collections, instead you use collections of DTOs and you can easily replace your data source with any other ORM, API etc. without breaking your code.
 
 <a id="Entity-Relations"></a>
 ## Entity relations
@@ -192,7 +192,7 @@ In a Laravel service container we decorate our action before binding it to our i
         return $bookListActionLogged;  
       });
      }
-As GetBookListActionLogger implements GetBookListActionInterface, it can be easily bound to this in a service container and in this case we extended GetBookListAction instead of modifying it. We can add as many deorators as we like and everything will work fine.
+As GetBookListActionLogger implements GetBookListActionInterface, it can be easily bound to this in a service container and in this case we extended GetBookListAction instead of modifying it. We can add as many decorators as we like and everything will work fine.
 
 <a id="API-Resources"></a>
 ## API resources
