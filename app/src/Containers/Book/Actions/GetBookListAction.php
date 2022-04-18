@@ -6,7 +6,7 @@ use Carbon\Carbon;
 use LargeLaravel\Containers\Book\Collections\BookCollection;
 use LargeLaravel\Containers\Book\DTO\BookDTO;
 use LargeLaravel\Containers\Book\Proxies\BookEloquentProxy;
-use LargeLaravel\Containers\Book\Subactions\Interfaces\GetBookListActionInterface;
+use LargeLaravel\Containers\Book\Actions\Interfaces\GetBookListActionInterface;
 use LargeLaravel\Ship\Http\Requests\API\Interfaces\PaginateRequestInterface;
 
 class GetBookListAction implements GetBookListActionInterface
