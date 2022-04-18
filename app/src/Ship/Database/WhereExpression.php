@@ -8,8 +8,10 @@ class WhereExpression extends Filter
 {
     /** @var string */
     private $field;
+
     /** @var string */
     private $symbol;
+
     /** @var mixed */
     private $value;
 

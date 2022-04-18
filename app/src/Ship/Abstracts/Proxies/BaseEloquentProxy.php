@@ -2,11 +2,10 @@
 
 namespace LargeLaravel\Ship\Abstracts\Proxies;
 
+use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use LargeLaravel\Ship\Database\Filter;
 use LargeLaravel\Ship\Database\WhereExpression;
 use LargeLaravel\Ship\Exceptions\EntityNotExistException;
-use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
-
 
 abstract class BaseEloquentProxy
 {
@@ -66,13 +65,12 @@ abstract class BaseEloquentProxy
         array $whereList = [],
         ?int $limit = null,
         ?int $offset = null
-    ): array
-    {
+    ): array {
         $query = $this->buildQuery($whereList);
-        if($limit !== null) {
+        if ($limit !== null) {
             $query->limit($limit);
         }
-        if($limit !== null && $offset !== null) {
+        if ($limit !== null && $offset !== null) {
             $query->offset($offset);
         }
 
@@ -87,6 +85,7 @@ abstract class BaseEloquentProxy
     public function getCount(array $whereList = []): int
     {
         $query = $this->buildQuery($whereList);
+
         return $query->count();
     }
 
@@ -107,6 +106,7 @@ abstract class BaseEloquentProxy
         }
 
         $rawModel->update($fields);
+
         return $rawModel->toArray();
     }
 
@@ -122,6 +122,7 @@ abstract class BaseEloquentProxy
         $query->update($fields);
 
         $rawResult = $query->get();
+
         return $rawResult->toArray();
     }
 
@@ -155,7 +156,7 @@ abstract class BaseEloquentProxy
         $query = $this->buildQuery($whereList);
         $rawData = $query->get();
 
-        if (!$rawData) {
+        if (! $rawData) {
             $model = static::MODEL;
             throw EntityNotExistException::newInstance($model->getTable());
         }
@@ -189,6 +190,7 @@ abstract class BaseEloquentProxy
         foreach ($filterList as $filter) {
             $query = $filter->addToQuery($query);
         }
+
         return $query;
     }
 }

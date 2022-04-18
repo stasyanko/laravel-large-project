@@ -36,15 +36,15 @@ class RouteServiceProvider extends ServiceProvider
             foreach ($filesystem->directories(app_path('src/Containers')) as $directory) {
                 $uiModuleName = last(explode('/', $directory));
 
-                $webRouteProvider = $directory . '/UI/WEB/Routes/RouteProvider.php';
+                $webRouteProvider = $directory.'/UI/WEB/Routes/RouteProvider.php';
                 if (file_exists($webRouteProvider)) {
-                    $webProviderClass = 'LargeLaravel\Containers\\' . $uiModuleName . '\UI\WEB\Routes\RouteProvider';
+                    $webProviderClass = 'LargeLaravel\Containers\\'.$uiModuleName.'\UI\WEB\Routes\RouteProvider';
                     $uiRouteProviderList[] = $webProviderClass;
                 }
 
-                $apiRouteProvider = $directory . '/UI/API/Routes/RouteProvider.php';
+                $apiRouteProvider = $directory.'/UI/API/Routes/RouteProvider.php';
                 if (file_exists($apiRouteProvider)) {
-                    $apiProviderClass = 'LargeLaravel\Containers\\' . $uiModuleName . '\UI\API\Routes\RouteProvider';
+                    $apiProviderClass = 'LargeLaravel\Containers\\'.$uiModuleName.'\UI\API\Routes\RouteProvider';
                     $uiRouteProviderList[] = $apiProviderClass;
                 }
             }
@@ -52,10 +52,11 @@ class RouteServiceProvider extends ServiceProvider
             return $uiRouteProviderList;
         };
 
-        if($isProduction) {
-            $uiRouteProviderList = Cache::get('uiRouteProviderList', function () use($routeProviderListFunction) {
+        if ($isProduction) {
+            $uiRouteProviderList = Cache::get('uiRouteProviderList', function () use ($routeProviderListFunction) {
                 $uiRouteProviderList = $routeProviderListFunction();
                 Cache::put('uiRouteProviderList', $uiRouteProviderList, 60);
+
                 return $uiRouteProviderList;
             });
         } else {
@@ -72,6 +73,5 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-
     }
 }

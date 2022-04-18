@@ -1,6 +1,5 @@
 <?php
 
-
 namespace LargeLaravel\Containers\User\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;

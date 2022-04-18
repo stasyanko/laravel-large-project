@@ -22,7 +22,7 @@ class RouteProvider extends ServiceProvider
                 '',
                 [
                     'as' => 'api_book_list',
-                    'uses' => BookController::class . '@list',
+                    'uses' => BookController::class.'@list',
                 ]
             );
         });

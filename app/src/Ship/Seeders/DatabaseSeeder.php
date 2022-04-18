@@ -4,7 +4,6 @@ namespace LargeLaravel\Ship\Seeders;
 
 use Illuminate\Database\Seeder;
 
-
 class DatabaseSeeder extends Seeder
 {
     /**

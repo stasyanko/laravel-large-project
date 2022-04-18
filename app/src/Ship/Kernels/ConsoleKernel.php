@@ -42,17 +42,17 @@ class ConsoleKernel extends BaseConsoleKernel
             $commandsDirsList = [];
 
             foreach ($filesystem->directories(app_path('src/Containers')) as $directory) {
-                $commandsDir = $directory . '/Commands';
+                $commandsDir = $directory.'/Commands';
                 if (is_dir($commandsDir)) {
                     $commandsDirsList[] = $commandsDir;
                 }
             }
 
             Cache::put('commandsDirsList', $commandsDirsList, 120);
+
             return $commandsDirsList;
         });
 
         $this->load($commandsDirsList);
     }
 }
-

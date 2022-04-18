@@ -1,8 +1,6 @@
 <?php
 
-
 namespace LargeLaravel\Containers\Book\Actions;
-
 
 use Carbon\Carbon;
 use LargeLaravel\Containers\Book\Collections\BookCollection;

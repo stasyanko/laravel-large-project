@@ -178,7 +178,7 @@ return [
         /*
          * Custom Service Providers...
          */
-        LargeLaravel\Containers\Book\Providers\BookServiceProvider::class
+        LargeLaravel\Containers\Book\Providers\BookServiceProvider::class,
     ],
 
     /*

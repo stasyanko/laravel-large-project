@@ -1,8 +1,6 @@
 <?php
 
-
 namespace LargeLaravel\Containers\Book\Actions\Decorators;
-
 
 use LargeLaravel\Containers\Book\Collections\BookCollection;
 use LargeLaravel\Containers\Book\Subactions\Interfaces\GetBookListActionInterface;
