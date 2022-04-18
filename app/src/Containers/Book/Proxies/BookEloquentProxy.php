@@ -1,6 +1,5 @@
 <?php
 
-
 namespace LargeLaravel\Containers\Book\Proxies;
 
 use LargeLaravel\Containers\Book\Models\Book;

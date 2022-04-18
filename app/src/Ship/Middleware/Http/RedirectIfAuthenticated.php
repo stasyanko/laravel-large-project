@@ -2,9 +2,9 @@
 
 namespace LargeLaravel\Ship\Middleware\Http;
 
-use LargeLaravel\Ship\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Support\Facades\Auth;
+use LargeLaravel\Ship\Providers\RouteServiceProvider;
 
 class RedirectIfAuthenticated
 {

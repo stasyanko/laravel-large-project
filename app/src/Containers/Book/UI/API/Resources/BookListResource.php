@@ -6,7 +6,6 @@ use LargeLaravel\Containers\Book\Collections\BookCollection;
 use LargeLaravel\Containers\Book\UI\API\Resources\Interfaces\BookListResourceInterface;
 use LargeLaravel\Ship\Abstracts\Resources\ApiResource;
 
-
 class BookListResource extends ApiResource implements BookListResourceInterface
 {
     public function fromCollection(BookCollection $bookCollection): array

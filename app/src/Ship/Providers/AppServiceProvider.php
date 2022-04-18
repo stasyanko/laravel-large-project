@@ -34,12 +34,13 @@ class AppServiceProvider extends ServiceProvider
             $migrationsDirsList = [];
 
             foreach ($filesystem->directories(app_path('src/Containers')) as $directory) {
-                $migrationsDir = $directory . '/Data/Migrations';
+                $migrationsDir = $directory.'/Data/Migrations';
                 if (is_dir($migrationsDir)) {
                     $migrationsDirsList[] = $migrationsDir;
                 }
             }
             Cache::put('migrationsDirsList', $migrationsDirsList, 120);
+
             return $migrationsDirsList;
         });
 

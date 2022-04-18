@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     protected $table = 'books';
+
     protected $fillable = [
         'title',
         'original_title',
@@ -20,6 +21,7 @@ class Book extends Model
         'ISBN',
         'edition',
     ];
+
     protected $casts = [
         'author_id' => 'integer',
         'cover_type_id' => 'integer',

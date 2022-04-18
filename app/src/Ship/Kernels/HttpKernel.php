@@ -16,7 +16,7 @@ class HttpKernel extends BaseHttpKernel
     protected $middleware = [
         \LargeLaravel\Ship\Middleware\Http\TrustProxies::class,
         \Fruitcake\Cors\HandleCors::class,
-        \LargeLaravel\Ship\Middleware\Http\CheckForMaintenanceMode::class,
+        \LargeLaravel\Ship\Middleware\Http\PreventRequestsDuringMaintenance::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \LargeLaravel\Ship\Middleware\Http\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,

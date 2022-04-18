@@ -20,7 +20,7 @@ class BookServiceProvider extends ServiceProvider
         $bookListAction = new GetBookListAction(new BookEloquentProxy());
         $bookListActionLogged = new GetBookListActionLogger($bookListAction);
 
-        $this->app->bind(GetBookListActionInterface::class, function ($app) use($bookListActionLogged) {
+        $this->app->bind(GetBookListActionInterface::class, function ($app) use ($bookListActionLogged) {
             return $bookListActionLogged;
         });
     }

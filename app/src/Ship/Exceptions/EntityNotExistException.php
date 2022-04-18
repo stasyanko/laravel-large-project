@@ -11,6 +11,6 @@ class EntityNotExistException extends \Exception
      */
     public static function newInstance(string $entityName): self
     {
-        return new self('Entity "' . $entityName .'" not exist');
+        return new self('Entity "'.$entityName.'" not exist');
     }
 }

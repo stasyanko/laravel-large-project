@@ -13,8 +13,7 @@ class BookController extends Controller
         PaginateRequest $request,
         BookListResource $bookListResource,
         GetBookListActionInterface $getBookListAction
-    )
-    {
+    ) {
         $bookCollection = $getBookListAction->execute($request);
 
         return response()->json($bookListResource->fromCollection($bookCollection));

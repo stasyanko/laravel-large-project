@@ -6,5 +6,4 @@ use Illuminate\Http\Request;
 
 abstract class ApiRequest extends Request
 {
-
 }
