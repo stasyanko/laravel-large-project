@@ -246,11 +246,11 @@ Your custom seeders must be in the  Data folder of the proper container, e.g. Co
  <a id="Todo"></a>
 # TODO
 
+ - Migrate to PHP 8.4
+ - Get rid of collections and use Phpstan instead for typing of collections
+ - Migrate to property promotion with readonly modifier for DTOs
+ - Migrate to latest Laravel
  - ~~move console, http kernels to Ship folder~~
  - ~~move RouteServiceProvider to Ship folder~~
- - make interface Filter which is implemented by every Where class
  - ~~write installation guide~~
- - write tests
  - ~~write documentation in readme with all design patterns and principles used~~
- - deploy to Heroku
- - add CI/CD
