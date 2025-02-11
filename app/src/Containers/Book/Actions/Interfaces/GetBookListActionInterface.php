@@ -1,6 +1,6 @@
 <?php
 
-namespace LargeLaravel\Containers\Book\Subactions\Interfaces;
+namespace LargeLaravel\Containers\Book\Actions\Interfaces;
 
 use LargeLaravel\Containers\Book\Collections\BookCollection;
 use LargeLaravel\Ship\Http\Requests\API\Interfaces\PaginateRequestInterface;
